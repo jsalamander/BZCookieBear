@@ -8,6 +8,11 @@ on:
 
 jobs:
   build:
+    env:
+      WEBSTORE_REFRESH_TOKEN: '${{ secrets.WEBSTORE_REFRESH_TOKEN }}'
+      WEBSTORE_EXTENSION_ID: '${{ secrets.WEBSTORE_EXTENSION_ID }}'
+      WEBSTORE_CLIENT_SECRET: '${{ secrets.WEBSTORE_CLIENT_SECRET }}'
+      WEBSTORE_CLIENT_ID: '${{ secrets.WEBSTORE_CLIENT_ID }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
