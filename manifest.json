@@ -1,0 +1,34 @@
+{
+  "name": "CookieBear - Free BZ Abo Plus",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Access Berner Zeitung Abo Plus articles for free",
+  "homepage_url": "https://github.com/jsalamander/bz-cookie-eater",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [{
+    "js": [
+      "js/notice.min.js",
+      "js/cookies.min.js",
+      "contentscript.js"
+    ],
+    "css": [
+      "css/notice.min.css"
+    ],
+    "matches": ["https://*.bernerzeitung.ch/*"],
+    "run_at": "document_end"
+}],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "cookies",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.bernerzeitung.ch/"
+  ]
+}
