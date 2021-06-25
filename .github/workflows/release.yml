@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: '14'
       - run: npm i -g chrome-webstore-upload archiver
-      - run: node ./delpoy/chrome.js
+      - run: node ./deploy/chrome.js
