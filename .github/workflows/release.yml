@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Pack And Deploy Extension
 
 on:
   push:
@@ -14,5 +14,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm i -g chrome-webstore-upload archiver
+      - run: npm i chrome-webstore-upload archiver
       - run: node ./deploy/chrome.js
