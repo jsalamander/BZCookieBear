@@ -13,7 +13,7 @@
 
  Install the extension from the Chrome Web Store.
 
- When you open https://www.bernerzeitung.ch it will automatically log you in. This might takes some time.
+ When you open https://www.bernerzeitung.ch it will automatically log you in. This might take some time.
 
 ![Login Step](assets/baking.png "Login Step")
 
