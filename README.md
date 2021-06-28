@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/jsalamander/BZCookieBear/main/assets/cookie_bear.png" alt="Cookie Bear"/>
 </p>
+
 # BZCookieBear
  Read Berner Zeitung Abo+ Articles For Free
 
