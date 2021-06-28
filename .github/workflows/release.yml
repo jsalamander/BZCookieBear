@@ -21,3 +21,8 @@ jobs:
           node-version: '14'
       - run: npm i chrome-webstore-upload archiver
       - run: node ./deploy/chrome.js
+      - name: Upload Extension ZIP as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-report
+          path: chrome.zip
