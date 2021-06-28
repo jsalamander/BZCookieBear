@@ -4,6 +4,9 @@
 
 
 ![Chrome Web Store Release](https://github.com/jsalamander/BZCookieBear/actions/workflows/release.yml/badge.svg)
+![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/jbhjncaphhkhhdhcjdpdcnjpeplgbhah.svg?label=users)
+
+
 
 # BZCookieBear
  Read Berner Zeitung Abo Articles For Free
