@@ -1,0 +1,10 @@
+{
+    "appName": {
+      "message": "CookieBear - Free BZ Abo Plus",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "Access Berner Zeitung Abo Plus articles for free",
+      "description":"The description of the application, displayed in the web store."
+    }
+  }

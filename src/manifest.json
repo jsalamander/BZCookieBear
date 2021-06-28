@@ -1,8 +1,8 @@
 {
-  "name": "CookieBear - Free BZ Abo Plus",
+  "name": "__MSG_appName__",
   "version": "1.0.0",
   "manifest_version": 3,
-  "description": "Access Berner Zeitung Abo Plus articles for free",
+  "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/jsalamander/bz-cookie-eater",
   "icons": {
     "16": "icons/icon16.png",
