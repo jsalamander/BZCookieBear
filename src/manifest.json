@@ -23,12 +23,6 @@
     "matches": ["https://*.bernerzeitung.ch/*"],
     "run_at": "document_end"
 }],
-  "permissions": [
-    "tabs",
-    "activeTab",
-    "cookies",
-    "scripting"
-  ],
   "host_permissions": [
     "https://www.bernerzeitung.ch/"
   ]
