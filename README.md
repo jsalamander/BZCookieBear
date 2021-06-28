@@ -2,6 +2,9 @@
   <img src="https://raw.githubusercontent.com/jsalamander/BZCookieBear/main/assets/cookie_bear.png" alt="Cookie Bear"/>
 </p>
 
+
+![Chrome Web Store Release](https://github.com/jsalamander/BZCookieBear/actions/workflows/release.yml/badge.svg)
+
 # BZCookieBear
  Read Berner Zeitung Abo Articles For Free
 
