@@ -3,7 +3,7 @@
 </p>
 
 # BZCookieBear
- Read Berner Zeitung Abo+ Articles For Free
+ Read Berner Zeitung Abo Articles For Free
 
  
  # Manual
