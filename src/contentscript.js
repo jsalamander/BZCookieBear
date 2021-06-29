@@ -7,9 +7,9 @@ async function main() {
   if (!document.cookie.includes('cresid')) {
     notice.showLoading({
       type: 'dots',
-      title: 'Baking Some Cookies For Free Access',
-      color: '#333',
-      backgroundColor: 'rgba(255,255,255,.6)',
+      title: 'Baking Some Cookies For Free Access. This might take a while.',
+      color: '#0C042A',
+      backgroundColor: 'rgba(222, 194, 173,.95)',
       fontSize: 14,
     });
     try {
