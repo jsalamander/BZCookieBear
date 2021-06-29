@@ -1,0 +1,33 @@
+{
+  "name": "bz-cookie-bear",
+  "version": "1.0.1",
+  "description": "Read BZ Abo articles for free",
+  "main": "contentscript.js",
+  "dependencies": {},
+  "devDependencies": {
+    "archiver": "^5.3.0",
+    "chrome-webstore-upload": "^0.4.4",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "scripts": {
+    "lint": "eslint ./src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsalamander/BZCookieBear.git"
+  },
+  "keywords": [
+    "BZ",
+    "Bear",
+    "Free",
+    "Abo"
+  ],
+  "author": "jsalamander",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jsalamander/BZCookieBear/issues"
+  },
+  "homepage": "https://github.com/jsalamander/BZCookieBear#readme"
+}
