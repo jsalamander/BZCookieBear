@@ -7,13 +7,13 @@
 ![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/jbhjncaphhkhhdhcjdpdcnjpeplgbhah.svg?label=users)
 ![GitHub](https://img.shields.io/github/license/jsalamander/BZCookieBear)
 
-# BZCookieBear
+# BZCookieBear - Chrome Extension
  Read Berner Zeitung Abo Articles For Free
 
  
  # Manual
 
- Install the extension from the Chrome Web Store.
+ Install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/cookiebear-gratis-bz-abo/jbhjncaphhkhhdhcjdpdcnjpeplgbhah?hl=de).
 
  When you open https://www.bernerzeitung.ch it will automatically log you in. This might take some time.
 
