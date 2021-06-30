@@ -4,7 +4,9 @@
 
 
 ![Chrome Web Store Release](https://github.com/jsalamander/BZCookieBear/actions/workflows/release.yml/badge.svg)
-![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/jbhjncaphhkhhdhcjdpdcnjpeplgbhah.svg?label=users)
+![Chrome Web Store Users](https://badgen.net/chrome-web-store/users/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
+![Chrome Web Store Rating](https://badgen.net/chrome-web-store/rating/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
+![Chrome Web Store Stars](https://badgen.net/chrome-web-store/stars/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
 ![GitHub](https://img.shields.io/github/license/jsalamander/BZCookieBear)
 
 # BZCookieBear - Chrome Extension
