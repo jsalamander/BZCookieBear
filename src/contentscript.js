@@ -15,11 +15,11 @@ async function main() {
     });
     try {
       // logout to remove the httpOnly cresid cookie
-      fetch("https://www.bernerzeitung.ch/disco-api/v1/paywall/terminate-session", {
-        "body": "{}",
-        "method": "POST",
-        "mode": "cors",
-        "credentials": "include"
+      fetch('https://www.bernerzeitung.ch/disco-api/v1/paywall/terminate-session', {
+        body: '{}',
+        method: 'POST',
+        mode: 'cors',
+        credentials: 'include',
       });
       const response = await fetch(api);
       const cookieData = await response.json();

@@ -19,7 +19,7 @@ jobs:
       - run: npm i
       - run: npm run-script lint
 
-  build:
+  upload_web_store:
     if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     env:
       WEBSTORE_REFRESH_TOKEN: '${{ secrets.WEBSTORE_REFRESH_TOKEN }}'
