@@ -4,6 +4,7 @@ const api = 'https://bz-cookie-eater.herokuapp.com/';
 const notice = new Notice();
 
 async function main() {
+  // will fail if the httpOnly cresid is set
   if (!document.cookie.includes('cresid')) {
     notice.showLoading({
       type: 'dots',
@@ -13,6 +14,13 @@ async function main() {
       fontSize: 14,
     });
     try {
+      // logout to remove the httpOnly cresid cookie
+      fetch("https://www.bernerzeitung.ch/disco-api/v1/paywall/terminate-session", {
+        "body": "{}",
+        "method": "POST",
+        "mode": "cors",
+        "credentials": "include"
+      });
       const response = await fetch(api);
       const cookieData = await response.json();
       if (cookieData.length > 0) {
