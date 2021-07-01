@@ -3,6 +3,41 @@ const api = 'https://bz-cookie-eater.herokuapp.com/';
 /* eslint-disable-next-line no-undef */
 const notice = new Notice();
 
+/**
+ * make a logout call
+ *
+ * the server then unsets the cresid cookie
+ * This works even if httpOnly is set
+ */
+async function logoutUser() {
+  await fetch('https://www.bernerzeitung.ch/disco-api/v1/paywall/terminate-session', {
+    body: '{}',
+    method: 'POST',
+    mode: 'cors',
+    credentials: 'include',
+  });
+}
+
+/**
+ * check if the cresid cookie is actually valid
+ */
+async function validateCresidCookie() {
+  const resp = await fetch('https://www.bernerzeitung.ch/disco-api/v1/paywall/validate-session', {
+    body: '{}',
+    method: 'POST',
+    mode: 'cors',
+    credentials: 'include',
+  });
+
+  if (!resp.ok) {
+    notice.showToast({
+      text: 'Your 🍪 was not accepted - retrying',
+      type: 'info',
+    });
+    await logoutUser();
+  }
+}
+
 async function main() {
   // will fail if the httpOnly cresid is set
   if (!document.cookie.includes('cresid')) {
@@ -15,12 +50,7 @@ async function main() {
     });
     try {
       // logout to remove the httpOnly cresid cookie
-      await fetch('https://www.bernerzeitung.ch/disco-api/v1/paywall/terminate-session', {
-        body: '{}',
-        method: 'POST',
-        mode: 'cors',
-        credentials: 'include',
-      });
+      await logoutUser();
       const response = await fetch(api);
       if (!response.ok) {
         notice.showToast({
@@ -54,6 +84,8 @@ async function main() {
       });
     }
     notice.hideLoading();
+  } else {
+    await validateCresidCookie();
   }
 }
 /* eslint-disable-next-line no-console */
