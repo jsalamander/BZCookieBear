@@ -93,11 +93,13 @@ console.log(`
 main();
 
 // watch for url changes -> needed due to spa architecture
-let lastUrl = location.href; 
+/* eslint-disable-next-line no-restricted-globals */
+let lastUrl = location.href;
 new MutationObserver(() => {
+  /* eslint-disable-next-line no-restricted-globals */
   const url = location.href;
   if (url !== lastUrl) {
     lastUrl = url;
     main();
   }
-}).observe(document, {subtree: true, childList: true});
+}).observe(document, { subtree: true, childList: true });
