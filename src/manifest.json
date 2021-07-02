@@ -18,6 +18,7 @@
       "contentscript.js"
     ],
     "css": [
+      "css/main.css",
       "css/notice.min.css"
     ],
     "matches": ["https://*.bernerzeitung.ch/*"],
