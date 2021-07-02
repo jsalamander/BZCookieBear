@@ -1,4 +1,4 @@
-const api = 'https://bz-cookie-eater.herokuapp.com/';
+const api = 'https://bz-cookie-bakery.herokuapp.com/';
 // https://github.com/OUDUIDUI/notice-kit
 /* eslint-disable-next-line no-undef */
 const notice = new Notice();
