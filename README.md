@@ -10,7 +10,7 @@
 ![Chrome Web Store Stars](https://badgen.net/chrome-web-store/stars/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
 ![GitHub](https://img.shields.io/github/license/jsalamander/BZCookieBear)
 
-# BZCookieBear - Chrome Extension
+# BZCookieBear - Chrome / Firefox Extension
  Read Berner Zeitung Abo Articles For Free
 
  
