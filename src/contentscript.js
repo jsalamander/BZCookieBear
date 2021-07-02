@@ -122,8 +122,8 @@ async function validateCresidCookie() {
 async function main() {
   // will fail if the httpOnly cresid is set
   if (!document.cookie.includes('cresid')) {
+    showLoadingAnimation(notice);
     try {
-      showLoadingAnimation(notice);
       // logout to remove the httpOnly cresid cookie
       await logoutUser();
       const response = await fetch(api);
