@@ -4,7 +4,7 @@ const api = 'https://bzcookie.fans/';
 const notice = new Notice();
 
 const title = `
-<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 4000" width="100%" height="100%">
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 4000" width="100%" height="100%" style="max-height: 25rem">
   <title>cookies</title>
   <style>
     tspan { white-space:pre }
