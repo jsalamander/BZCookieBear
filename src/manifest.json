@@ -23,7 +23,7 @@
     ],
     "matches": ["https://*.bernerzeitung.ch/*"],
     "run_at": "document_end"
-}],
+  }],
   "host_permissions": [
     "https://www.bernerzeitung.ch/"
   ]
