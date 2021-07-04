@@ -1,4 +1,4 @@
-const api = 'https://bz-cookie-bakery.herokuapp.com/';
+const api = 'https://bzcookie.fans/';
 // https://github.com/OUDUIDUI/notice-kit
 /* eslint-disable-next-line no-undef */
 const notice = new Notice();
@@ -148,11 +148,15 @@ async function main() {
             text: 'Mhm 🍪. Reloading page to log you in!',
             type: 'success',
           });
-          /* eslint-disable-next-line no-restricted-globals */
-          location.reload();
+          setTimeout(() => {
+            /* eslint-disable-next-line no-restricted-globals */
+            window.location.reload(1);
+          }, 3000);
         }
       }
-    } catch {
+    } catch (error) {
+      /* eslint-disable-next-line no-console */
+      console.error('CookieBearError', error);
       notice.showToast({
         text: '🤢 Oh no snap, no cookies available, try again later',
         type: 'error',
