@@ -13,6 +13,8 @@
   "default_locale": "de",
   "content_scripts": [{
     "js": [
+      "js/sentry.browser.min.js",
+      "js/sentry.tracing.min.js",
       "js/notice.min.js",
       "js/cookies.min.js",
       "contentscript.js"

