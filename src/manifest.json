@@ -21,12 +21,37 @@
     ],
     "css": [
       "css/main.css",
-      "css/notice.min.css"
+      "css/notice.min.css",
+      "css/animate.min.css"
     ],
-    "matches": ["https://*.bernerzeitung.ch/*"],
+    "matches": [
+      "https://*.bernerzeitung.ch/*",
+      "https://*.www.24heures.ch/*",
+      "https://*.www.bazonline.ch/*",
+      "https://*.www.berneroberlaender.ch/*",
+      "https://*.www.tagesanzeiger.ch/*",
+      "https://*.www.derbund.ch/*",
+      "https://*.www.landbote.ch/*",
+      "https://*.www.langenthalertagblatt.ch/*",
+      "https://*.www.zsz.ch/*",
+      "https://*.www.thunertagblatt.ch/*",
+      "https://*.www.tdg.ch/*",
+      "https://*.www.zuonline.ch/*"
+    ],
     "run_at": "document_end"
   }],
   "host_permissions": [
-    "https://www.bernerzeitung.ch/"
+    "https://www.bernerzeitung.ch/",
+    "https://www.24heures.ch/",
+    "https://www.bazonline.ch/",
+    "https://www.berneroberlaender.ch/",
+    "https://www.tagesanzeiger.ch/",
+    "https://www.derbund.ch/",
+    "https://www.landbote.ch/",
+    "https://www.langenthalertagblatt.ch/",
+    "https://www.zsz.ch/",
+    "https://www.thunertagblatt.ch/",
+    "https://www.tdg.ch/",
+    "https://www.zuonline.ch/"
   ]
 }
