@@ -34,14 +34,17 @@
 
  Install the extension from the links above.
 
- When you open https://www.bernerzeitung.ch it will automatically log you in. This might take some time.
+ When you open any of the above listed pages, the addon will automatically log you in. This might take some time.
+ If you installed the addon while having one of the above pages open in a tab, you might need to reload the page.
 
 ![Login Step](assets/tagi_example.png "Login Step")
 
-After that you'll be able to read Abo articles and you can see, that you are logged in as a random user.
+After that you'll be able to read Abo articles and you can see that you are logged in as a random user.
 
 
 ![Logged In Step](assets/tagi_logged_in.png "Logged In Step")
+
+If the random session is not valid anymore it will automatically fetch a new one.
 
 
 # Firefox portability
