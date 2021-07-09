@@ -3,7 +3,9 @@
   "version": "1.4.0",
   "description": "Read BZ Abo articles for free",
   "main": "contentscript.js",
-  "dependencies": {},
+  "dependencies": {
+    "edit-json-file": "^1.6.0"
+  },
   "devDependencies": {
     "archiver": "^5.3.0",
     "chrome-webstore-upload": "^0.4.4",

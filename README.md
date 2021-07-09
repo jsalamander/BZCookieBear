@@ -45,22 +45,3 @@ After that you'll be able to read Abo articles and you can see that you are logg
 ![Logged In Step](assets/tagi_logged_in.png "Logged In Step")
 
 If the random session is not valid anymore it will automatically fetch a new one.
-
-
-# Firefox portability
-
-To make it work as addon some changes in the `manifest.json` file are needed
-
-Set the manifest version to `2`
-
-```json
-  "manifest_version": 3,
-```
-
-Add the permission key to allow cors request to the BZCookieBakery domain.
-
-```json
- "permissions": [
-    "https://bzcookie.fans/*"
-  ],
-```
