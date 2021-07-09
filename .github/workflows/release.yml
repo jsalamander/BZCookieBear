@@ -46,6 +46,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: chrome.zip
+          files: |
+            chrome.zip
+            firefox.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
