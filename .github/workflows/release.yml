@@ -35,11 +35,13 @@ jobs:
       - run: npm i
       - run: npm run-script lint
       - run: node ./deploy/chrome.js
+      # firefox MUST run after chrome, as it modifies the manifest
+      - run: node ./deploy/firefox.js
       - name: Upload Extension ZIP as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: extension-zip
-          path: chrome.zip
+          name: extension-zips
+          path: ./*.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
