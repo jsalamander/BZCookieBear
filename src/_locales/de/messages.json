@@ -1,10 +1,10 @@
 {
     "appName": {
-      "message": "CookieBear - Gratis BZ Abo Artikel lesen",
+      "message": "CookieBear - Gratis Tamedia Abo",
       "description": "The title of the application, displayed in the web store."
     },
     "appDesc": {
-      "message": "Abo Artikel der Berner Zeitung gratis lesen",
+      "message": "Abo Artikel einiger Tamedia Zeitungen gratis lesen",
       "description":"The description of the application, displayed in the web store."
     }
   }
