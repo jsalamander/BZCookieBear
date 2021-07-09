@@ -17,6 +17,7 @@
 
  The supported pages are:
  
+  * www.bernerzeitung.ch
   * www.24heures.ch
   * www.bazonline.ch
   * www.berneroberlaender.ch
