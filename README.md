@@ -46,3 +46,7 @@ After that you'll be able to read Abo articles and you can see that you are logg
 ![Logged In Step](assets/tagi_logged_in.png "Logged In Step")
 
 If the random session is not valid anymore it will automatically fetch a new one.
+
+
+# API
+The extension communicates with [BZCookieBakery](https://github.com/jsalamander/BZCookieBakery) which delivers the cookies used to authenticate.
