@@ -133,7 +133,7 @@ async function main() {
     showLoadingAnimation(notice);
     try {
       // logout to remove the httpOnly cresid cookie
-      const api = `https://bzcookie.fans/?hostname=${getTamediaPageHostname()}`;
+      const api = `https://www.bzcookie.fans/?hostname=${getTamediaPageHostname()}`;
       await logoutUser();
       const response = await fetch(api);
       if (!response.ok) {
