@@ -6,7 +6,7 @@ const file = editJsonFile(`${__dirname}/../src/manifest.json`);
 // To ensure firefox compatibility
 file.set('manifest_version', 2);
 file.append(
-  'permissions', 'https://bzcookie.fans/*',
+  'permissions', 'https://www.bzcookie.fans/*',
 );
 /* eslint-disable no-console */
 
