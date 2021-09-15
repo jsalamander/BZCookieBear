@@ -47,6 +47,36 @@ After that you'll be able to read Abo articles and you can see that you are logg
 
 If the random session is not valid anymore it will automatically fetch a new one.
 
+## Installation on Android
+Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
+To run **BZCookieBear** on your phone you need to install Firefox first, and enable a custom plugin collection.
+
+### How To
+
+#### 1. Install Firefox Nightly
+Install [Firefox Nightly](https://play.google.com/store/apps/details?id=org.mozilla.fenix&hl=en&gl=US) on you Android device
+
+#### 2. Enable Developer Menu
+[Enable the developer Menu](https://blog.mozilla.org/addons/2020/09/29/expanded-extension-support-in-firefox-for-android-nightly/): Go to **Settings** -> **About Firefox Nightly** -> Tap the Firefox logo five times
+
+#### 3. Activating The Custom Addon Collection
+Navigate back to the **Settings** page and click on the menu entry **Custom Add-on collection**.
+Enter the following details into the form:
+
+**Collection Owner (User ID):** `16930263`
+
+**Collection Name:** `CookieBear`
+
+![Custom Addon Collection Details](assets/firefox_nightly_android/custom_addon_collection.png "Custom Addon Collection Details")
+
+Click `ok`.
+
+Now you need to install the addon by navigating clicking the three dots 
+on the main menu in the navigation bar. Then go to **Add-ons** and activate it.
+Accept all subsequent popups.
+
+**That's it - have fun using BZCookieBear on you Android device.**
+
 
 # API
 The extension communicates with [BZCookieBakery](https://github.com/jsalamander/BZCookieBakery) which delivers the cookies used to authenticate.
