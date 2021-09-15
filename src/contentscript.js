@@ -85,6 +85,7 @@ function showLoadingAnimation(noticeObj) {
     /* eslint-disable-next-line no-param-reassign */
     el.style.visibility = 'hidden';
   });
+  document.getElementById('notice-loading').style.zIndex = 2147483647 // max z-index
 }
 
 function getTamediaPageHostname() {
