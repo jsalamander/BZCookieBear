@@ -1,6 +1,6 @@
 {
   "name": "bz-cookie-bear",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Read BZ Abo articles for free",
   "main": "contentscript.js",
   "dependencies": {
