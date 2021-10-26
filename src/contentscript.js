@@ -94,15 +94,14 @@ function getTamediaPageHostname() {
 
 /**
  * make a logout call
- *
- * the server then unsets the cresid cookie
- * This works even if httpOnly is set
  */
 async function logoutUser() {
-  await fetch(`https://${getTamediaPageHostname()}/disco-api/v1/paywall/terminate-session`, {
-    body: '{}',
-    method: 'POST',
-    mode: 'cors',
+  const prefix = 'abo-digital';
+  const hostname = getTamediaPageHostname().replace('www', '');
+  const redirect = window.location.href;
+  await fetch(`https://${prefix}${hostname}/identity-service/auth/logout?post_logout_redirect_uri=${redirect}`, {
+    method: 'GET',
+    mode: 'no-cors',
     credentials: 'include',
   });
 }
