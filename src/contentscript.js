@@ -96,9 +96,17 @@ function getTamediaPageHostname() {
  * make a logout call
  */
 async function logoutUser() {
+  const cookieName = 'logging_out_process';
+  if (Cookies.get(cookieName)) {
+    Cookies.remove(cookieName);
+    console.log('skipping logging out again');
+    return;
+  }
+
   const prefix = 'abo-digital';
   const hostname = getTamediaPageHostname().replace('www', '');
   const redirect = window.location.href;
+  Cookies.set(cookieName, true);
   await fetch(`https://${prefix}${hostname}/identity-service/auth/logout?post_logout_redirect_uri=${redirect}`, {
     method: 'GET',
     mode: 'no-cors',
