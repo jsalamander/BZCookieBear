@@ -1,9 +1,13 @@
 import { createRequire } from 'module';
+import path from 'path';
+/* eslint-disable-next-line */
+import zipFolder from './zipFolder.js';
 
 const require = createRequire(import.meta.url);
 const editJsonFile = require('edit-json-file');
 
-const file = editJsonFile(`${__dirname}/../src/manifest.json`);
+const filePath = path.resolve('./src/manifest.json');
+const file = editJsonFile(filePath);
 
 // Make the necessary changes to the manifest
 // To ensure firefox compatibility
@@ -15,8 +19,6 @@ file.append(
 
 console.log(file.get());
 file.save();
-
-const zipFolder = require('./zipFolder');
 
 const browser = 'firefox';
 
