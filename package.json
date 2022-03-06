@@ -1,7 +1,7 @@
 {
   "name": "bz-cookie-bear",
-  "version": "1.4.5",
-  "description": "Read BZ Abo articles for free",
+  "version": "2.0.0",
+  "description": "Auto-Login for OneLog fronted news websites",
   "main": "contentscript.js",
   "dependencies": {
     "edit-json-file": "^1.6.0",
@@ -25,7 +25,8 @@
     "Tamedia",
     "Bear",
     "Free",
-    "Abo"
+    "Abo",
+    "OneLog"
   ],
   "author": "jsalamander",
   "license": "SEE LICENSE IN LICENSE",

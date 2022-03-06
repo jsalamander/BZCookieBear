@@ -10,9 +10,8 @@
         "ecmaVersion": 12
     },
     "globals": {
-        "Sentry": "readonly",
-        "Notice": "readonly",
-        "Cookies": "readonly"
+        "vNotify": "readonly",
+        "$": "readonly"
     },
     "rules": {
     }

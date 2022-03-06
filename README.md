@@ -15,37 +15,18 @@
  [![Chrome Web Store](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/mPGKYBIR2uCP0ApchDXE.png)](https://chrome.google.com/webstore/detail/cookiebear-gratis-bz-abo/jbhjncaphhkhhdhcjdpdcnjpeplgbhah?hl=de)
  [![Firefox Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/de/firefox/addon/cookiebear-gratis-bz-abo/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
- The supported pages are:
- 
-  * www.bernerzeitung.ch
-  * www.24heures.ch
-  * www.bazonline.ch
-  * www.berneroberlaender.ch
-  * www.tagesanzeiger.ch
-  * www.derbund.ch
-  * www.landbote.ch
-  * www.langenthalertagblatt.ch
-  * www.zsz.ch
-  * www.thunertagblatt.ch
-  * www.tdg.ch
-  * www.zuonline.ch
+ The supported pages are can be found here https://consent.onelog.ch/.
+
+ An excerpt:
+
+ >BILANZ, Guider, Handelszeitung, Beobachter, Blick, Energy, L’illustré, Izzy Projects, lematin.ch, Moon&Stars, PME, Rockit Radio, Schlager Radio, Schweizer Illustrierte, Streaming, 20 Minuten, Vintage Radio, Basler Zeitung, 24 heures, Berner Oberländer, BZ Berner Zeitung, Bilan, Der Bund, Der Landbote, Femina, Finanz und Wirtschaft, BZ Langenthaler Tagblatt, Le Matin Dimanche, Schweizer Familie, Sihltaler, SonntagsZeitung, Tages-Anzeiger, Tamedia, Thalwiler Anzeiger, Thuner Tagblatt, Tribune de Genève, 12-App, Zürcher Unterländer und Zürichsee-Zeitung. 
 
  
  # Manual
 
  Install the extension from the links above.
 
- When you open any of the above listed pages, the addon will automatically log you in. This might take some time.
- If you installed the addon while having one of the above pages open in a tab, you might need to reload the page.
-
-![Login Step](assets/tagi_example.png "Login Step")
-
-After that you'll be able to read Abo articles and you can see that you are logged in as a random user.
-
-
-![Logged In Step](assets/tagi_logged_in.png "Logged In Step")
-
-If the random session is not valid anymore it will automatically fetch a new one.
+ When you open any of the above listed pages and then click on their respective login button, the addon will automatically log you in. Some pages require some more information that you might have to fill out manually with random stuff.
 
 ## Installation on Android
 Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
@@ -79,4 +60,4 @@ Accept all subsequent popups.
 
 
 # API
-The extension communicates with [BZCookieBakery](https://github.com/jsalamander/BZCookieBakery) which delivers the cookies used to authenticate.
+The extension communicates with [BZCookieBakery](https://github.com/jsalamander/BZCookieBakery) which distributes the random account credentials used to authenticate.
