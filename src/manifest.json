@@ -30,8 +30,5 @@
   "host_permissions": [
     "https://profile.onelog.ch/",
     "https://welcome.onelog.ch/"
-  ],
-  "permissions": [
-    "https://www.bzcookie.fans/*"
   ]
 }
