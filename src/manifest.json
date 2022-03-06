@@ -1,7 +1,7 @@
 {
   "name": "__MSG_appName__",
-  "version": "1.4.5",
-  "manifest_version": 3,
+  "version": "2.0.0",
+  "manifest_version": 2,
   "description": "__MSG_appDesc__",
   "homepage_url": "https://github.com/jsalamander/bz-cookie-eater",
   "icons": {
@@ -11,22 +11,27 @@
     "128": "icons/icon128.png"
   },
   "default_locale": "de",
-  "content_scripts": [{
-    "js": [
-      "js/jquery-3.6.0.slim.js",
-      "js/vanilla-notify.js",
-      "contentscript.js"
-    ],
-    "css": [
-      "css/vanilla-notify.css"
-    ],
-    "matches": [
-      "https://*.onelog.ch/*"
-    ],
-    "run_at": "document_end"
-  }],
+  "content_scripts": [
+    {
+      "js": [
+        "js/jquery-3.6.0.slim.js",
+        "js/vanilla-notify.js",
+        "contentscript.js"
+      ],
+      "css": [
+        "css/vanilla-notify.css"
+      ],
+      "matches": [
+        "https://*.onelog.ch/*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
   "host_permissions": [
     "https://profile.onelog.ch/",
     "https://welcome.onelog.ch/"
+  ],
+  "permissions": [
+    "https://www.bzcookie.fans/*"
   ]
 }
