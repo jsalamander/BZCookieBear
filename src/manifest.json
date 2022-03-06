@@ -13,45 +13,20 @@
   "default_locale": "de",
   "content_scripts": [{
     "js": [
-      "js/sentry.browser.min.js",
-      "js/sentry.tracing.min.js",
-      "js/notice.min.js",
-      "js/cookies.min.js",
+      "js/jquery-3.6.0.slim.js",
+      "js/vanilla-notify.js",
       "contentscript.js"
     ],
     "css": [
-      "css/main.css",
-      "css/notice.min.css",
-      "css/animate.min.css"
+      "css/vanilla-notify.css"
     ],
     "matches": [
-      "https://*.bernerzeitung.ch/*",
-      "https://*.www.24heures.ch/*",
-      "https://*.www.bazonline.ch/*",
-      "https://*.www.berneroberlaender.ch/*",
-      "https://*.www.tagesanzeiger.ch/*",
-      "https://*.www.derbund.ch/*",
-      "https://*.www.landbote.ch/*",
-      "https://*.www.langenthalertagblatt.ch/*",
-      "https://*.www.zsz.ch/*",
-      "https://*.www.thunertagblatt.ch/*",
-      "https://*.www.tdg.ch/*",
-      "https://*.www.zuonline.ch/*"
+      "https://*.onelog.ch/*"
     ],
     "run_at": "document_end"
   }],
   "host_permissions": [
-    "https://www.bernerzeitung.ch/",
-    "https://www.24heures.ch/",
-    "https://www.bazonline.ch/",
-    "https://www.berneroberlaender.ch/",
-    "https://www.tagesanzeiger.ch/",
-    "https://www.derbund.ch/",
-    "https://www.landbote.ch/",
-    "https://www.langenthalertagblatt.ch/",
-    "https://www.zsz.ch/",
-    "https://www.thunertagblatt.ch/",
-    "https://www.tdg.ch/",
-    "https://www.zuonline.ch/"
+    "https://profile.onelog.ch/",
+    "https://welcome.onelog.ch/"
   ]
 }
