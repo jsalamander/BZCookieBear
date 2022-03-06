@@ -1,3 +1,6 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 const editJsonFile = require('edit-json-file');
 
 const file = editJsonFile(`${__dirname}/../src/manifest.json`);
