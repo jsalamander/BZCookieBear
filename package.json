@@ -6,7 +6,7 @@
   "dependencies": {
     "edit-json-file": "^1.6.0",
     "archiver": "^5.3.0",
-    "chrome-webstore-upload": "^0.4.4"
+    "chrome-webstore-upload": "1.0.0"
   },
   "devDependencies": {
     "eslint": "^7.29.0",
