@@ -1,6 +1,7 @@
-const fs = require('fs');
-const chromeWebstoreUpload = require('chrome-webstore-upload');
-const zipFolder = require('./zipFolder');
+import chromeWebstoreUpload from 'chrome-webstore-upload';
+import fs from 'fs';
+/* eslint-disable-next-line */
+import zipFolder from './zipFolder.js';
 
 const browser = 'chrome';
 

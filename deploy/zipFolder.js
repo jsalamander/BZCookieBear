@@ -1,8 +1,10 @@
-// require modules
-const fs = require('fs');
+import fs from 'fs';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 const archiver = require('archiver');
 
-module.exports = function zipFolder(folder, zipName, options = {}) {
+export default function zipFolder(folder, zipName, options = {}) {
   return new Promise((resolve, reject) => {
     const output = fs.createWriteStream(zipName);
     const archive = archiver('zip');
@@ -35,4 +37,4 @@ module.exports = function zipFolder(folder, zipName, options = {}) {
     // calling this method so register to them beforehand
     archive.finalize();
   });
-};
+}
