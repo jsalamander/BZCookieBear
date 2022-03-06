@@ -28,6 +28,10 @@
 
  When you open any of the above listed pages and then click on their respective login button, the addon will automatically log you in. Some pages require some more information that you might have to fill out manually with random stuff.
 
+ ## Credentials Page
+
+ If you don't want to use the Addon you can find credentials here:  https://jsalamander.github.io/BZCookieBear/
+
 ## Installation on Android
 Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
 To run **BZCookieBear** on your phone you need to install Firefox first, and enable a custom plugin collection.
