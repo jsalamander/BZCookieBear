@@ -1,0 +1,36 @@
+1<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">
+    <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
+      <div class="flex justify-center flex-row mb-5">
+        <img class="max-h-[6rem]" alt="CookieBear" src="https://raw.githubusercontent.com/jsalamander/BZCookieBear/main/assets/cookie_bear.png">
+      </div>  
+      <div class="bg-white min-w-[20rem] shadow w-full rounded-lg divide-y divide-gray-200">
+        <div class="px-5 py-7">
+          <label class="font-semibold text-sm text-gray-600 pb-1 block">E-mail</label>
+          <div id="email" class="border min-h-[2rem] w-full rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"></div>
+          <label class="font-semibold text-sm text-gray-600 pb-1 block">Password</label>
+          <div id="password" class="border min-h-[2rem] w-full rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"></div>
+        </div>
+    </div>
+  </div>
+  </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        fetch('https://www.bzcookie.fans')
+    .then(async (data) => {
+        const credentials = await data.json();
+        console.log(credentials)
+        document.getElementById('email').textContent = credentials.email;
+        document.getElementById('password').textContent = credentials.password;
+    })
+  });
+</script>
+</body>
+</html>
