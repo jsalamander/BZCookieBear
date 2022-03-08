@@ -30,7 +30,7 @@
 
  ## Credentials Page
 
- If you don't want to use the Addon you can find credentials here:  https://jsalamander.github.io/BZCookieBear/
+ If you don't want to use the Addon you can find credentials here:  https://creds.bzcookie.fans/
 
 ## Installation on Android
 Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
