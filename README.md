@@ -4,33 +4,36 @@
 
 
 ![Chrome Web Store Release](https://github.com/jsalamander/BZCookieBear/actions/workflows/release.yml/badge.svg)
-![Chrome Web Store Version](https://badgen.net/chrome-web-store/v/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
-![Chrome Web Store Rating](https://badgen.net/chrome-web-store/rating/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
-![Chrome Web Store Stars](https://badgen.net/chrome-web-store/stars/jbhjncaphhkhhdhcjdpdcnjpeplgbhah)
 ![GitHub](https://img.shields.io/github/license/jsalamander/BZCookieBear)
 
 # BZCookieBear - Chrome / Firefox Extension
- Read Tamedia Abo Articles For Free
- 
- [![Chrome Web Store](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/mPGKYBIR2uCP0ApchDXE.png)](https://chrome.google.com/webstore/detail/cookiebear-gratis-bz-abo/jbhjncaphhkhhdhcjdpdcnjpeplgbhah?hl=de)
- [![Firefox Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/de/firefox/addon/cookiebear-gratis-bz-abo/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+> Read many Swiss news sites paywalled articles for free
 
- The supported pages are can be found here https://consent.onelog.ch/.
+[![Firefox Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/de/firefox/addon/cookiebear-gratis-bz-abo/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
- An excerpt:
+The supported pages are can be found here https://consent.onelog.ch/.
 
- >BILANZ, Guider, Handelszeitung, Beobachter, Blick, Energy, L’illustré, Izzy Projects, lematin.ch, Moon&Stars, PME, Rockit Radio, Schlager Radio, Schweizer Illustrierte, Streaming, 20 Minuten, Vintage Radio, Basler Zeitung, 24 heures, Berner Oberländer, BZ Berner Zeitung, Bilan, Der Bund, Der Landbote, Femina, Finanz und Wirtschaft, BZ Langenthaler Tagblatt, Le Matin Dimanche, Schweizer Familie, Sihltaler, SonntagsZeitung, Tages-Anzeiger, Tamedia, Thalwiler Anzeiger, Thuner Tagblatt, Tribune de Genève, 12-App, Zürcher Unterländer und Zürichsee-Zeitung. 
+An excerpt:
 
- 
- # Manual
+>BILANZ, Guider, Handelszeitung, Beobachter, Blick, Energy, L’illustré, Izzy Projects, lematin.ch, Moon&Stars, PME, Rockit Radio, Schlager Radio, Schweizer Illustrierte, Streaming, 20 Minuten, Vintage Radio, Basler Zeitung, 24 heures, Berner Oberländer, BZ Berner Zeitung, Bilan, Der Bund, Der Landbote, Femina, Finanz und Wirtschaft, BZ Langenthaler Tagblatt, Le Matin Dimanche, Schweizer Familie, Sihltaler, SonntagsZeitung, Tages-Anzeiger, Tamedia, Thalwiler Anzeiger, Thuner Tagblatt, Tribune de Genève, 12-App, Zürcher Unterländer und Zürichsee-Zeitung. 
 
- Install the extension from the links above.
 
- When you open any of the above listed pages and then click on their respective login button, the addon will automatically log you in. Some pages require some more information that you might have to fill out manually with random stuff.
+# Manual
 
- ## Credentials Page
+Install the Firefox Addon from the link above. If you want to install it for a Chrome based browser follow the section below.
 
- If you don't want to use the Addon you can find credentials here:  https://jsalamander.github.io/BZCookieBear/
+When you open any of the above listed pages and then click on their respective login button, the addon will automatically log you in. Some pages require some more information that you might have to fill out manually with random stuff.
+
+## Credentials Page
+
+If you don't want to use the Addon you can find credentials here:  https://jsalamander.github.io/BZCookieBear/
+
+## Installation on Chrome (based browsers)
+
+1. Download the CRX file to your computer from the releases
+2. Open your Chrome web browser.
+3. Navigate to chrome://extensions/ and check the box for Developer mode in the top right.
+4. Click on the “Load unpacked” button, and go to the location of this content of this CRX file. And click on the OK button to install that Chrome extension.
 
 ## Installation on Android
 Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
