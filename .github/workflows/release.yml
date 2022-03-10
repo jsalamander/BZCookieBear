@@ -22,6 +22,7 @@ jobs:
   build_chrome:
     runs-on: ubuntu-latest
     steps:
+      - run: ls -alh src && cat src/manifest.json
       - id: packExtensionDir
         uses: cardinalby/webext-buildtools-pack-extension-dir-action@v1
         with:
