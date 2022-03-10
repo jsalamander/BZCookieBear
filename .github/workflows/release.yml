@@ -22,6 +22,7 @@ jobs:
   build_chrome:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: ls -alh
       - id: packExtensionDir
         uses: cardinalby/webext-buildtools-pack-extension-dir-action@v1
