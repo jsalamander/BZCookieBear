@@ -26,7 +26,7 @@ When you open any of the above listed pages and then click on their respective l
 
 ## Credentials Page
 
-If you don't want to use the Addon you can find credentials here:  https://jsalamander.github.io/BZCookieBear/
+If you don't want to use the Addon you can find credentials here:  https://creds.bzcookie.fans/
 
 ## Installation on Chrome (based browsers)
 
