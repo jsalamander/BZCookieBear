@@ -45,7 +45,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            buld/chrome.crx
+            build/chrome.crx
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
