@@ -28,22 +28,29 @@ jobs:
         with:
           extensionDir: 'src'
           zipFilePath: 'build/chrome.zip'
-      
       - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
         with:
           # zip file made at the packExtensionDir step
           zipFilePath: 'build/chrome.zip'
           crxFilePath: 'build/chrome.crx'
           privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
-      - run: ls -alh build
+      - name: Upload Crx as artifact
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: extension-zips
+          path: ./build/chrome.crx
+      - name: Release
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            buld/chrome.crx
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build_firefox:
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
-    env:
-      WEBSTORE_REFRESH_TOKEN: '${{ secrets.WEBSTORE_REFRESH_TOKEN }}'
-      WEBSTORE_EXTENSION_ID: '${{ secrets.WEBSTORE_EXTENSION_ID }}'
-      WEBSTORE_CLIENT_SECRET: '${{ secrets.WEBSTORE_CLIENT_SECRET }}'
-      WEBSTORE_CLIENT_ID: '${{ secrets.WEBSTORE_CLIENT_ID }}'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -53,11 +60,13 @@ jobs:
       - run: npm i
       - run: node ./deploy/firefox.js
       - name: Upload Extension ZIP as artifact
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
         uses: actions/upload-artifact@v2
         with:
           name: extension-zips
           path: ./*.zip
       - name: Release
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
