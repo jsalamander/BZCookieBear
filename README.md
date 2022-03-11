@@ -7,7 +7,7 @@
 ![GitHub](https://img.shields.io/github/license/jsalamander/BZCookieBear)
 
 # BZCookieBear - Chrome / Firefox Extension
-> Read many Swiss news sites paywalled articles for free
+> Read many swiss media websites for free without paywall
 
 [![Firefox Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/de/firefox/addon/cookiebear-gratis-bz-abo/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
@@ -30,10 +30,10 @@ If you don't want to use the Addon you can find credentials here:  https://creds
 
 ## Installation on Chrome (based browsers)
 
-1. Download the CRX file to your computer from the releases
+1. Download the `chrome.crx` file to your computer from the releases [page](https://github.com/jsalamander/BZCookieBear/releases)
 2. Open your Chrome web browser.
-3. Navigate to chrome://extensions/ and check the box for Developer mode in the top right.
-4. Click on the “Load unpacked” button, and go to the location of this content of this CRX file. And click on the OK button to install that Chrome extension.
+3. Navigate to `chrome://extensions/` in your address bar (or click options -> more tools -> extensions) and check the box for Developer mode in the top right.
+4. Drag and drop `chrome.crx` onto the page to install it
 
 ## Installation on Android
 Currently, mobile Browsers do not really support extensions as they do for their desktop counterparts.
