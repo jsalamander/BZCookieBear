@@ -11,7 +11,7 @@
 
 [![Firefox Addons](https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png)](https://addons.mozilla.org/de/firefox/addon/cookiebear-gratis-bz-abo/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 
-The supported pages are can be found here https://consent.onelog.ch/.
+The supported pages can be found here https://consent.onelog.ch/.
 
 An excerpt:
 
