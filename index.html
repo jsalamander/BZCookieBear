@@ -95,7 +95,7 @@
                         const clipboard = new ClipboardJS('.copy-btn');
                         clipboard.on('success', function(e) {
                             if (navigator.vibrate) {
-                                window.navigator.vibrate([20, 200, 20]);
+                                window.navigator.vibrate(20);
                             }
                         });
                     } else {
