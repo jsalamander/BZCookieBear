@@ -16,11 +16,11 @@
             <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
 
                 <div class="flex justify-center flex-row mb-5">
-                    <img class="max-h-[6rem]" alt="CookieBear" src="https://raw.githubusercontent.com/jsalamander/BZCookieBear/main/assets/cookie_bear.png" />
+                    <img class="max-h-[6rem]" alt="CookieBear" src="https://raw.githubusercontent.com/jsalamander/BZCookieBear/main/assets/cookie_bear_no_bg.png" />
                 </div>
 
                 <div class="flex justify-center flex-row mb-5">
-                    <span class="text-orange-800 font-bold">Free Swiss Media Logins</span>
+                    <span class="text-[#5A2E2B] font-bold">Free Swiss Media Logins</span>
                 </div>
 
                 <div class="bg-white min-w-[20rem] shadow w-full rounded-lg divide-y divide-gray-200">
@@ -39,16 +39,16 @@
                 </div>
 
                 <div id="error-box" class="p-4 hidden mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800" role="alert">
-                    <span class="font-medium">Error!</span> Seems like there are no credentials available 🍪 - Create a bug report <a class="text-orange-800" href="https://github.com/jsalamander/BZCookieBakery/issues">here</a> 
+                    <span class="font-medium">Error!</span> Seems like there are no credentials available 🍪 - Create a bug report <a class="text-[#5A2E2B]" href="https://github.com/jsalamander/BZCookieBakery/issues">here</a> 
                   </div>
 
                 <div class="min-w-[20rem] mt-4 text-center">
-                    <div class="text-sm text-gray-600 pb-1 block">Supported Pages can be found <a class="text-orange-800" href="https://consent.onelog.ch/">here</a></div>
+                    <div class="text-sm text-gray-600 pb-1 block">Supported Pages can be found <a class="text-[#5A2E2B]" href="https://consent.onelog.ch/">here</a></div>
                 </div>
 
                 <div class="min-w-[20rem] mt-4 text-center">
                     <div class="text-sm text-gray-600 pb-1 block">
-                        <a class="text-orange-800" href="https://status.bzcookie.fans/">
+                        <a class="text-[#5A2E2B]" href="https://status.bzcookie.fans/">
                             System Health 🏥
                         </a>
                     </div>
@@ -69,7 +69,9 @@
                         document.getElementById("error-box").classList.remove("hidden");
                     }
 
-                    window?.navigator?.vibrate([20, 200, 20]);
+                    if (navigator.vibrate) {
+                        window.navigator.vibrate([20, 200, 20]);
+                    }
                 });
             });
         </script>
