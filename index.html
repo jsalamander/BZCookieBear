@@ -5,12 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v2.0.10/dist/clipboard.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta property="og:title" content="CookieBear - Free Swiss Media Logins">
         <meta property="og:site_name" content="CookieBear">
         <meta property="og:url" content="https://creds.bzcookie.fans/">
         <meta property="og:description" content="Read many swiss media websites for free without paywall">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://github.com/jsalamander/BZCookieBear/raw/main/assets/og.png">
+        <style>
+            ::selection {
+                background-color:rgb(255,198,125);
+                color:#5A2E2B;
+            }
+        </style>
     </head>
     <body>
         <div class="min-h-screen bg-gray-100 flex flex-col justify-center sm:py-12">    
@@ -41,7 +49,7 @@
                     <div id="credentials" class="px-5 py-7 hidden">
                         <label class="font-semibold text-sm text-[#5A2E2B] pb-1 block">E-mail</label>
                         <div class="flex border min-h-[2rem] w-full rounded-lg content-center">
-                            <div id="email" class="text-sm w-full p-3"></div>
+                            <div id="email" class="text-sm w-full p-3 select-all"></div>
                             <span data-clipboard-target="#email" class="copy-btn inline-flex items-center px-3 cursor-pointer text-sm bg-gray-200 rounded-r-md border border-l-0 border-gray-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
@@ -51,7 +59,7 @@
 
                         <label class="mt-4 font-semibold text-sm text-[#5A2E2B] pb-1 block">Password</label>
                         <div class="flex border min-h-[2rem] w-full rounded-lg content-center">
-                            <div id="password" class="text-sm w-full p-3"></div>
+                            <div id="password" class="text-sm w-full p-3 select-all"></div>
                             <span data-clipboard-target="#password" class="copy-btn inline-flex items-center px-3 cursor-pointer text-sm bg-gray-200 rounded-r-md border border-l-0 border-gray-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
@@ -99,6 +107,11 @@
                             if (navigator.vibrate) {
                                 window.navigator.vibrate(20);
                             }
+                            iziToast.success({
+                                message: 'Copied!',
+                                position: 'topRight',
+                                timeout: 1000
+                            });
                         });
                     } else {
                         document.getElementById("error-box").classList.remove("hidden");
