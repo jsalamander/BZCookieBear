@@ -38,6 +38,10 @@
                     <div class="text-sm text-gray-600 pb-1 block">Copy & Paste the credentials below and use them to login to your chosen Swiss News Portal</div>
                 </div>
 
+                <div class="p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800" role="alert">
+                    <span class="font-bold">! Do NOT change passwords</span>, these are only trial accounts. You won't gain aything by changing them.
+                </div>
+
                 <div class="bg-white min-w-[20rem] shadow w-full rounded-lg divide-y divide-gray-200">
                     <div id="loading-spinner" class="flex justify-center flex-row p-10">
                         <svg role="status" class="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-orange-800" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,6 +122,20 @@
                     }
                 });
             });
+        </script>
+        <!-- Matomo -->
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="//piwik.schicht-plan.ch/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '6']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
         </script>
     </body>
 </html>
